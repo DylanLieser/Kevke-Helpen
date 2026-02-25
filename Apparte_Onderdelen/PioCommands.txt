@@ -1,0 +1,27 @@
+**Github Linken**
+------------------------------------------------------------------------------
+//GitHub account linken via terminal
+git config --global user.name "naam"
+git config --global user.email "email"
+------------------------------------------------------------------------------
+//Controle of het gelukt is
+git config --global --list
+------------------------------------------------------------------------------
+**PlatformIO**
+------------------------------------------------------------------------------
+//Nieuw project aanmaken
+-> eerst een folder aanmaken op de plaats waar je het wil 
+bv: cd/home/student01/PlatformIO/Projects -> hierin doe je mkdir ESP_LoRa_Test
+daarna -> pio project init --project-dir ESP_LoRa_Test --board esp32dev
+------------------------------------------------------------------------------
+//Lib toevoegen
+-> eerst naar de folder gaan bv cd/home/student01/PlatformIO/Projects/ESP_LoRa_Test 
+daarna -> pio lib install "LoRa”
+------------------------------------------------------------------------------
+// Seriele poort doet moeilijk
+sudo chmod a+rw /dev/ttyUSB0 
+sudo usermod -a -G dialout $USER 
+sudo usermod -a -G tty $USER
+------------------------------------------------------------------------------
+// volle dir verwijderen
+Sudo rm -r ...
